@@ -23,4 +23,16 @@ public class SimpleStringBufferTests {
         assertEquals(0, str.getSize());
     }
 
+    void testMoveCursor() {
+        SimpleStringBuffer str = new SimpleStringBuffer();
+        str.insert('A');
+        str.insert('B');
+        str.insert('C');
+        str.moveLeft();
+        str.moveLeft();
+        assertEquals(1, str.getCursorPosition());
+        str.moveRight();
+        assertEquals(2, str.getCursorPosition());
+    }
+
 }
