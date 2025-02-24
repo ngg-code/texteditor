@@ -10,25 +10,12 @@ public class GapBuffer {
     public int capacity = 10;
     public int size;
 
-    public GapBuffer(int capacity, int indexI, int indexF) {
+    public GapBuffer() {
         this.capacity = 10;
         this.str = new char[this.capacity];
         this.indexI = 0;
         this.indexF = 4;
         this.size = 0;
-    }
-
-    public GapBuffer(String text) {
-        if (text == null) {
-            text = "";
-        }
-        int NewCapacity = Math.max(capacity, text.length() * 2);
-        str = new char[NewCapacity];
-        indexI = text.length();
-        indexF = NewCapacity;
-        size = text.length();
-
-        System.arraycopy(text.toCharArray(), 0, str, 0, text.length());
     }
 
     public void insert(char ch) {
