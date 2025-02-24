@@ -59,7 +59,10 @@ public class SimpleStringBuffer {
     }
 
     public char getChar(int i) {
-        throw new UnsupportedOperationException("Unimplemented method 'getChar'");
+        if (i < 0 || i >= size) {
+            throw new IndexOutOfBoundsException("Invalid index: " + i);
+        }
+        return arr[i];
     }
 
     @Override
