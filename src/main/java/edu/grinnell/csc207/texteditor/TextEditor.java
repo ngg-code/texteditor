@@ -18,6 +18,8 @@ public class TextEditor {
             System.exit(1);
         }
         
+        GapBuffer gapBuffer = new GapBuffer();
+        
         Screen screen = new DefaultTerminalFactory().createScreen();
         String path = args[0];
         System.out.format("Loading %s...\n", path);
