@@ -19,7 +19,12 @@ public class GapBuffer {
     }
     
     public void insert(char ch) {
-        throw new UnsupportedOperationException("Unimplemented method 'delete'");
+        if (this.indexI == this.indexF) {
+            expandBuffer();
+        }
+      str[this.indexI] = ch;
+      this.indexI++;
+      this.size++;
     }
 
     public void delete() {
