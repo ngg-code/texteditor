@@ -33,7 +33,7 @@ public class GapBuffer {
     }
 
     public int getCursorPosition() {
-        throw new UnsupportedOperationException("Unimplemented method 'getCursorPosition'");
+        return this.indexI;
     }
 
     public void moveLeft() {
