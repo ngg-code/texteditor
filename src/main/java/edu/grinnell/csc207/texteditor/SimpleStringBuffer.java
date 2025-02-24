@@ -49,7 +49,9 @@ public class SimpleStringBuffer {
     }
 
     public void moveRight() {
-        throw new UnsupportedOperationException("Unimplemented method 'moveRight'");
+        if (index < size) {
+            index++;
+            }
     }
 
     public int getSize() {
