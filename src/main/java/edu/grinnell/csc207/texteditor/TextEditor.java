@@ -24,5 +24,6 @@ public class TextEditor {
         screen.startScreen();
         String path = args[0];
         System.out.format("Loading %s...\n", path);
+        Path filePath = Paths.get(path);
     }
 }
