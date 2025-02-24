@@ -68,5 +68,17 @@ public class GapBufferTests {
         assertTrue(buffer.getSize() > 10, "Buffer should have expanded");
     }
 
-    
+    @Test
+    void testGetChar() {
+        buffer.insert('G');
+        buffer.insert('o');
+        buffer.insert('o');
+        buffer.insert('d');
+
+        assertEquals('G', buffer.getChar(0));
+        assertEquals('o', buffer.getChar(1));
+        assertEquals('o', buffer.getChar(2));
+        assertEquals('d', buffer.getChar(3));
+    }
+
 }
