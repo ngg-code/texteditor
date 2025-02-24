@@ -28,7 +28,8 @@ public class GapBuffer {
     }
 
     public void delete() {
-        throw new UnsupportedOperationException("Unimplemented method 'delete'");
+        this.indexI--;
+        this.size--;
     }
 
     public int getCursorPosition() {
