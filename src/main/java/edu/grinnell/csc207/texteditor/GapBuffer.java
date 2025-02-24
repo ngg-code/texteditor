@@ -18,6 +18,19 @@ public class GapBuffer {
         this.size = 0;
     }
 
+    public GapBuffer(String text) {
+        if (text == null) {
+            text = "";
+        }
+        int NewCapacity = Math.max(capacity, text.length() * 2);
+        str = new char[NewCapacity];
+        indexI = text.length();
+        indexF = NewCapacity;
+        size = text.length();
+
+        System.arraycopy(text.toCharArray(), 0, str, 0, text.length());
+    }
+
     public void insert(char ch) {
         if (this.indexI == this.indexF) {
             expandBuffer();
