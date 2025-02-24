@@ -53,7 +53,7 @@ public class GapBuffer {
 
     public void moveLeft() {
         if (this.indexI > 0) {
-            this.str[this.indexF] = this.str[this.indexI];
+            this.str[--this.indexF] = this.str[--this.indexI];
         }
     }
 
