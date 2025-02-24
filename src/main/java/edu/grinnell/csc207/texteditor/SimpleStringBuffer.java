@@ -4,6 +4,18 @@ package edu.grinnell.csc207.texteditor;
  * A naive implementation of a text buffer using a <code>String</code>.
  */
 public class SimpleStringBuffer {
+    public char[] arr;
+    public int index;
+    public int capacity;
+    private int size;
+
+    public SimpleStringBuffer() {
+        this.capacity = 10;
+        this.arr = new char[this.size];
+        this.index = 0;
+        this.size = 0;
+    }
+
     public void insert(char ch) {
         throw new UnsupportedOperationException("Unimplemented method 'delete'");
     }
