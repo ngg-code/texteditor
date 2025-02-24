@@ -22,7 +22,7 @@ public class SimpleStringBuffer {
         if (index >= arr.length) {
             expandBuffer();
         }
-        for (int i = size; i > index; i--) {
+        for (int i = capacity; i > index; i--) {
             arr[i] = arr[i - 1];
         }
         arr[index] = ch;
