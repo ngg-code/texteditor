@@ -55,7 +55,7 @@ public class SimpleStringBuffer {
     }
 
     public int getSize() {
-        throw new UnsupportedOperationException("Unimplemented method 'getSize'");
+        return size;
     }
 
     public char getChar(int i) {
