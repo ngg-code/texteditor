@@ -29,7 +29,13 @@ public class SimpleStringBuffer {
     }
 
     public void delete() {
-        throw new UnsupportedOperationException("Unimplemented method 'delete'");
+        if (index > 0) {
+            for (int i = index - 1; i < size - 1; i++) {
+                arr[i] = arr[i + 1];
+            }
+            index--;
+            size--;
+        }
     }
 
     public int getCursorPosition() {
