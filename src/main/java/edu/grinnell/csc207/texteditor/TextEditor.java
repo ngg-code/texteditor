@@ -17,10 +17,11 @@ public class TextEditor {
             System.err.println("Usage: java TextEditor <filename>");
             System.exit(1);
         }
-        
+
         GapBuffer gapBuffer = new GapBuffer();
         
         Screen screen = new DefaultTerminalFactory().createScreen();
+        screen.startScreen();
         String path = args[0];
         System.out.format("Loading %s...\n", path);
     }
