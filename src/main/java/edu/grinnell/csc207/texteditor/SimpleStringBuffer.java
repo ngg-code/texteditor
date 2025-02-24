@@ -67,6 +67,7 @@ public class SimpleStringBuffer {
 
     @Override
     public String toString() {
-        throw new UnsupportedOperationException("Unimplemented method 'toString'");
+        String str = new String(arr);
+        return str;
     }
 }
