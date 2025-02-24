@@ -19,4 +19,11 @@ public class GapBufferTests {
         assertEquals(0, buffer.getSize());
         assertEquals(0, buffer.getCursorPosition());
     }
+    
+    @Test
+    void testDeleteBeyondStart() {
+        buffer.delete(); // Should not crash
+        assertEquals("", buffer.toString());
+        assertEquals(0, buffer.getCursorPosition());
+    }
 }
