@@ -12,9 +12,9 @@ public class GapBuffer {
 
     public GapBuffer(int capacity, int indexI, int indexF) {
         this.capacity = 10;
-        char[] str = new char[this.size];
+        this.str = new char[this.size];
         this.indexI = 0;
-        this.indexF = 10;
+        this.indexF = 4;
         this.size = 0;
     }
 
