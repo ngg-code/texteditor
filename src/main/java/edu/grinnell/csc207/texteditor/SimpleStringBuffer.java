@@ -13,7 +13,7 @@ public class SimpleStringBuffer {
 
     public SimpleStringBuffer() {
         this.capacity = 10;
-        this.arr = new char[this.size];
+        this.arr = new char[this.capacity];
         this.index = 0;
         this.size = 0;
     }
