@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class SimpleStringBufferTests {
-    /@Test
+    @Test
     void testInsert() {
         SimpleStringBuffer str = new SimpleStringBuffer();
         str.insert('H');
@@ -12,5 +12,15 @@ public class SimpleStringBufferTests {
         assertEquals(2, str.getCursorPosition());
         assertEquals(2, str.getSize());
         assertEquals('H', str.getChar(0));
+        str.delete();
+        assertEquals("H", str.toString());
+        assertEquals(1, str.getCursorPosition());
+        assertEquals(1, str.getSize());
+        assertEquals('H', str.getChar(0));
+        str.delete();
+        assertEquals("", str.toString());
+        assertEquals(0, str.getCursorPosition());
+        assertEquals(0, str.getSize());
     }
+
 }
