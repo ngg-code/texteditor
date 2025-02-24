@@ -45,13 +45,13 @@ public class SimpleStringBuffer {
     public void moveLeft() {
         if (index > 0) {
             index--;
-            }
+        }
     }
 
     public void moveRight() {
         if (index < size) {
             index++;
-            }
+        }
     }
 
     public int getSize() {

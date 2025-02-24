@@ -7,24 +7,24 @@ public class GapBuffer {
     public char[] str;
     public int indexI;
     public int indexF;
-    public int capacity =10;
+    public int capacity = 10;
     public int size;
 
-    public GapBuffer(int capacity, int indexI, int indexF){
+    public GapBuffer(int capacity, int indexI, int indexF) {
         this.capacity = 10;
         char[] str = new char[this.size];
         this.indexI = 0;
         this.indexF = 3;
         this.size = 0;
     }
-    
+
     public void insert(char ch) {
         if (this.indexI == this.indexF) {
             expandBuffer();
         }
-      str[this.indexI] = ch;
-      this.indexI++;
-      this.size++;
+        str[this.indexI] = ch;
+        this.indexI++;
+        this.size++;
     }
 
     public void delete() {
@@ -58,16 +58,16 @@ public class GapBuffer {
 
     public String toString() {
         char[] result = new char[this.indexI + (this.str.length - this.indexF)];
-    int index = 0;
+        int index = 0;
 
-    for (int i = 0; i < this.indexI; i++) {
-        result[index++] = this.str[i];
-    }
-    for (int i = this.indexF; i < this.str.length; i++) {
-        result[index++] = this.str[i];
-    }
+        for (int i = 0; i < this.indexI; i++) {
+            result[index++] = this.str[i];
+        }
+        for (int i = this.indexF; i < this.str.length; i++) {
+            result[index++] = this.str[i];
+        }
 
-    return new String(result);
+        return new String(result);
     }
 
     private void expandBuffer() {
