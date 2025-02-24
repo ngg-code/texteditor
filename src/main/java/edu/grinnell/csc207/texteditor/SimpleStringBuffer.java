@@ -43,7 +43,9 @@ public class SimpleStringBuffer {
     }
 
     public void moveLeft() {
-        throw new UnsupportedOperationException("Unimplemented method 'moveLeft'");
+        if (index > 0) {
+            index--;
+            }
     }
 
     public void moveRight() {
