@@ -70,4 +70,11 @@ public class SimpleStringBuffer {
         String str = new String(arr);
         return str;
     }
+
+    private void expandBuffer() {
+        int newCapacity = arr.length * 2;
+        char[] newArray = new char[newCapacity];
+        System.arraycopy(arr, 0, newArray, 0, size);
+        arr = newArray;
+    }
 }
