@@ -29,8 +29,8 @@ public class GapBuffer {
 
     public void delete() {
         if (this.indexI > 0) {
-        this.indexI--;
-        this.size--;
+            this.indexI--;
+            this.size--;
         }
     }
 

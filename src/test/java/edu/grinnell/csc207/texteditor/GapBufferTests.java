@@ -57,4 +57,16 @@ public class GapBufferTests {
         buffer.moveRight(); // Should not exceed size
         assertEquals(3, buffer.getCursorPosition());
     }
+
+    @Test
+    void testExpandBuffer() {
+        for (int i = 0; i < 20; i++) {
+            buffer.insert((char) ('a' + i));
+        }
+
+        assertEquals("abcdefghijklmnopqrst", buffer.toString());
+        assertTrue(buffer.getSize() > 10, "Buffer should have expanded");
+    }
+
+    
 }
