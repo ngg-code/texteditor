@@ -69,4 +69,16 @@ public class GapBuffer {
 
     return new String(result);
     }
+
+    private void expandBuffer() {
+        int newSize = this.str.length * 2;
+        char[] newBuffer = new char[newSize];
+
+        int afterTextStart = newSize - (this.str.length - this.indexF);
+        System.arraycopy(this.str, 0, newBuffer, 0, this.indexI);
+        System.arraycopy(this.str, this.indexF, newBuffer, afterTextStart, this.str.length - this.indexF);
+
+        this.indexF = afterTextStart;
+        this.str = newBuffer;
+    }
 }
