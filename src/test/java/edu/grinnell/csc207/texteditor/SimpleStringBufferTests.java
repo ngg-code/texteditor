@@ -35,4 +35,23 @@ public class SimpleStringBufferTests {
         assertEquals(2, str.getCursorPosition());
     }
 
+    @Test
+    void testBufferExpansion() {
+        SimpleStringBuffer str = new SimpleStringBuffer();
+        str.insert('a');
+        str.insert('b');
+        str.insert('c');
+        str.insert('d');
+        str.insert('e');
+        str.insert('f');
+        str.insert('g');
+        str.insert('h');
+        str.insert('i');
+        str.insert('j');
+        str.insert('k');
+        str.insert('l');
+        assertEquals("abcdefghijkl", str.toString());
+        assertEquals(12, str.getCursorPosition());
+    }
+
 }
