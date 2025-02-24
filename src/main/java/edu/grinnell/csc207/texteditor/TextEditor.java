@@ -25,5 +25,43 @@ public class TextEditor {
         String path = args[0];
         System.out.format("Loading %s...\n", path);
         Path filePath = Paths.get(path);
+
+        if (Files.exists(filePath) && Files.isRegularFile(filePath)) {
+            String gapBufferStr = Files.readString(filePath);
+            for (int i = 0; i < gapBufferStr.length(); i++){
+                gapBuffer.insert(gapBufferStr.charAt(i));
+            }
+        }
+    }
+
+    boolean isRunning = true;
+    
+        while (isRunning) {
+            drawBuffer(gapBuffer, screen);
+            KeyStroke stroke = screen.readInput();
+
+            if (stroke.getKeyType() == KeyType.Character) {
+                gapBuffer.insert(stroke.getCharacter());
+            } 
+            
+            if (stroke.getKeyType() == KeyType.Backspace) {
+                gapBuffer.delete();
+            } 
+            
+            if (stroke.getKeyType() == KeyType.ArrowLeft) {
+                gapBuffer.moveLeft();
+            }
+            
+            if (stroke.getKeyType() == KeyType.ArrowRight) {
+                gapBuffer.moveRight();
+            } 
+            
+            if (stroke.getKeyType() == KeyType.Escape){
+                screen.stopScreen();
+                isRunning = false;
+            }
+        }
+        
+        Files.writeString(filePath, gapBuffer.toString());
     }
 }
