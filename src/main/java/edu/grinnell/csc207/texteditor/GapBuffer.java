@@ -37,7 +37,9 @@ public class GapBuffer {
     }
 
     public void moveLeft() {
-        throw new UnsupportedOperationException("Unimplemented method 'moveLeft'");
+        if (this.indexI > 0) {
+            this.str[this.indexF] = this.str[this.indexI];
+        }
     }
 
     public void moveRight() {
