@@ -4,6 +4,20 @@ package edu.grinnell.csc207.texteditor;
  * A gap buffer-based implementation of a text buffer.
  */
 public class GapBuffer {
+    public char[] str;
+    public int indexI;
+    public int indexF;
+    public int capacity =10;
+    public int size;
+
+    public GapBuffer(int capacity, int indexI, int indexF){
+        this.capacity = 10;
+        char[] str = new char[this.size];
+        this.indexI = 0;
+        this.indexF = 3;
+        this.size = 0;
+    }
+    
     public void insert(char ch) {
         throw new UnsupportedOperationException("Unimplemented method 'delete'");
     }
