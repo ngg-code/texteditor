@@ -57,6 +57,16 @@ public class GapBuffer {
     }
 
     public String toString() {
-        throw new UnsupportedOperationException("Unimplemented method 'toString'");
+        char[] result = new char[this.indexI + (this.str.length - this.indexF)];
+    int index = 0;
+
+    for (int i = 0; i < this.indexI; i++) {
+        result[index++] = this.str[i];
+    }
+    for (int i = this.indexF; i < this.str.length; i++) {
+        result[index++] = this.str[i];
+    }
+
+    return new String(result);
     }
 }
