@@ -53,7 +53,7 @@ public class GapBuffer {
     }
 
     public char getChar(int i) {
-        throw new UnsupportedOperationException("Unimplemented method 'getChar'");
+        return this.str[i];
     }
 
     public String toString() {
