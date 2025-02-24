@@ -7,6 +7,7 @@ public class TextEditor {
 
     /**
      * The main entry point for the TextEditor application.
+     * 
      * @param args command-line arguments.
      */
     public static void main(String[] args) {
@@ -14,8 +15,10 @@ public class TextEditor {
             System.err.println("Usage: java TextEditor <filename>");
             System.exit(1);
         }
-
-        // TODO: fill me in with a text editor TUI!
+        
+        DefaultTerminalFactory factory = new DefaultTerminalFactory();
+        Screen screen = factory.createScreen();
+     // TODO: fill me in with a text editor TUI!
         String path = args[0];
         System.out.format("Loading %s...\n", path);
     }

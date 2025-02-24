@@ -1,4 +1,6 @@
 package edu.grinnell.csc207.texteditor;
+import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
+import com.googlecode.lanterna.screen.Screen;
 
 /**
  * A naive implementation of a text buffer using a <code>String</code>.
