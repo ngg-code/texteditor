@@ -17,7 +17,15 @@ public class SimpleStringBuffer {
     }
 
     public void insert(char ch) {
-        throw new UnsupportedOperationException("Unimplemented method 'delete'");
+        if (index >= arr.length) {
+            expandBuffer();
+        }
+        for (int i = size; i > index; i--) {
+            arr[i] = arr[i - 1];
+        }
+        arr[index] = ch;
+        index++;
+        size++;
     }
 
     public void delete() {
