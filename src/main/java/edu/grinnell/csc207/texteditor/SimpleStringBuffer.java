@@ -39,7 +39,7 @@ public class SimpleStringBuffer {
     }
 
     public int getCursorPosition() {
-        throw new UnsupportedOperationException("Unimplemented method 'getCursorPosition'");
+        return index;
     }
 
     public void moveLeft() {
