@@ -49,7 +49,7 @@ public class GapBuffer {
     }
 
     public int getSize() {
-        throw new UnsupportedOperationException("Unimplemented method 'getSize'");
+        return this.size;
     }
 
     public char getChar(int i) {
