@@ -1,7 +1,5 @@
 package edu.grinnell.csc207.texteditor;
 
-import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
-import com.googlecode.lanterna.screen.Screen;
 
 /**
  * A naive implementation of a text buffer using a <code>String</code>.
@@ -13,18 +11,24 @@ public class SimpleStringBuffer {
     private int size;
 
     public SimpleStringBuffer() {
-        this.capacity = 10;
+        this.capacity = 100;
         this.arr = new char[this.capacity];
         this.index = 0;
         this.size = 0;
     }
 
     public void insert(char ch) {
-        if (index >= arr.length) {
+        if (index >= capacity) {
             expandBuffer();
         }
-        for (int i = capacity; i > index; i--) {
-            arr[i] = arr[i - 1];
+        if (index > size) {
+            arr[index] = ch;
+        } else if (index <= size) {
+            for (int i = index; i >= size + 1; i++) {
+                char temp = arr[i];
+                arr[i] = ch;
+                ch = temp;
+            }
         }
         arr[index] = ch;
         index++;
@@ -70,12 +74,12 @@ public class SimpleStringBuffer {
 
     @Override
     public String toString() {
-        String str = new String(arr);
+        String str = new String(arr, 0, size);
         return str;
     }
 
     private void expandBuffer() {
-        int newCapacity = arr.length * 2;
+        int newCapacity = capacity * 2;
         char[] newArray = new char[newCapacity];
         System.arraycopy(arr, 0, newArray, 0, size);
         arr = newArray;
