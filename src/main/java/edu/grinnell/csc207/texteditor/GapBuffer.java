@@ -7,14 +7,14 @@ public class GapBuffer {
     public char[] str;
     public int indexI;
     public int indexF;
-    public int capacity = 10;
+    public int capacity;
     public int size;
 
     public GapBuffer() {
         this.capacity = 10;
         this.str = new char[this.capacity];
         this.indexI = 0;
-        this.indexF = 4;
+        this.indexF = 10;
         this.size = 0;
     }
 
@@ -22,13 +22,13 @@ public class GapBuffer {
         if (this.indexI == this.indexF) {
             expandBuffer();
         }
-        str[this.indexI] = ch;
-        this.indexI++;
+        str[this.indexI++] = ch;
         this.size++;
     }
 
     public void delete() {
         if (this.indexI > 0) {
+            str[this.indexI - 1] = '\0';
             this.indexI--;
             this.size--;
         }
@@ -39,7 +39,11 @@ public class GapBuffer {
     }
 
     public void moveLeft() {
-        if (this.indexI > 0) {
+        if (this.indexI == this.indexF) {
+            this.indexI--;
+            this.indexF--;
+        }
+        if (this.indexI > 0 && this.indexI != this.indexF) {
             this.str[--this.indexF] = this.str[--this.indexI];
         }
     }
@@ -47,6 +51,10 @@ public class GapBuffer {
     public void moveRight() {
         if (this.indexF < this.str.length) {
             this.str[this.indexI++] = this.str[this.indexF++];
+        } else {
+            expandBuffer();
+            this.indexF++;
+            this.indexI++;
         }
     }
 
@@ -59,11 +67,15 @@ public class GapBuffer {
     }
 
     public String toString() {
-        char[] result = new char[this.indexI + (this.str.length - this.indexF)];
+        int length = this.indexI + (this.str.length - this.indexF);
+        char[] result = new char[length];
         int index = 0;
-
+        if (index >= length) {
+            expand(result);
+        }
         for (int i = 0; i < this.indexI; i++) {
-            result[index++] = this.str[i];
+            result[index] = this.str[i];
+            index++;
         }
         for (int i = this.indexF; i < this.str.length; i++) {
             result[index++] = this.str[i];
@@ -73,7 +85,7 @@ public class GapBuffer {
     }
 
     private void expandBuffer() {
-        int newSize = this.str.length * 2;
+        int newSize = this.str.length + 1;
         char[] newBuffer = new char[newSize];
 
         int afterTextStart = newSize - (this.str.length - this.indexF);
@@ -82,5 +94,12 @@ public class GapBuffer {
 
         this.indexF = afterTextStart;
         this.str = newBuffer;
+    }
+
+    private void expand(char[] result) {
+        int newSize = result.length * 2;
+        char[] newArray = new char[newSize];
+        System.arraycopy(result, 0, newArray, 0, result.length);
+        result = newArray;
     }
 }
