@@ -24,6 +24,7 @@ public class SimpleStringBufferTests {
         assertEquals(0, str.getSize());
     }
 
+    @Test
     void testMoveCursor() {
         SimpleStringBuffer str = new SimpleStringBuffer();
         str.insert('A');

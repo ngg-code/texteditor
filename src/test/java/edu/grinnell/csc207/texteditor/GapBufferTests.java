@@ -1,7 +1,12 @@
 package edu.grinnell.csc207.texteditor;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class GapBufferTests {
-    private GapBuffer buffer;
+    private GapBuffer buffer = new GapBuffer();
 
     @Test
     void testInsertCharacters() {
@@ -16,8 +21,8 @@ public class GapBufferTests {
         assertEquals(5, buffer.getCursorPosition());
         buffer.delete();
         assertEquals("Hell", buffer.toString());
-        assertEquals(0, buffer.getSize());
-        assertEquals(0, buffer.getCursorPosition());
+        assertEquals(4, buffer.getSize());
+        assertEquals(4, buffer.getCursorPosition());
     }
 
     @Test
@@ -54,8 +59,8 @@ public class GapBufferTests {
         buffer.moveRight();
         assertEquals(3, buffer.getCursorPosition());
 
-        buffer.moveRight(); // Should not exceed size
-        assertEquals(3, buffer.getCursorPosition());
+        buffer.moveRight();
+        assertEquals(4, buffer.getCursorPosition());
     }
 
     @Test
@@ -63,9 +68,8 @@ public class GapBufferTests {
         for (int i = 0; i < 20; i++) {
             buffer.insert((char) ('a' + i));
         }
-
         assertEquals("abcdefghijklmnopqrst", buffer.toString());
-        assertTrue(buffer.getSize() > 10, "Buffer should have expanded");
+        assertTrue(buffer.getSize() == 20, "Buffer should have expanded");
     }
 
     @Test

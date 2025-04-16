@@ -3,6 +3,12 @@ package edu.grinnell.csc207.texteditor;
 import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
 import com.googlecode.lanterna.screen.Screen;
 import java.io.IOException;
+import java.nio.file.*;
+
+import com.googlecode.lanterna.input.KeyStroke;
+import com.googlecode.lanterna.input.KeyType;
+
+
 
 /**
  * The driver for the TextEditor Application.
@@ -34,9 +40,9 @@ public class TextEditor {
                 gapBuffer.insert(gapBufferStr.charAt(i));
             }
         }
-    }
+    
 
-    boolean isRunning = true;
+    boolean isRunning = true;{
 
     while(isRunning)
     {
@@ -66,4 +72,11 @@ public class TextEditor {
     }
 
     Files.writeString(filePath,gapBuffer.toString());
-}}
+}
+}
+
+    private static void drawBuffer(GapBuffer gapBuffer, Screen screen) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'drawBuffer'");
+    }
+}
