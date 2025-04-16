@@ -5,10 +5,11 @@ import com.googlecode.lanterna.screen.Screen;
 import java.io.IOException;
 import java.nio.file.*;
 
+import com.googlecode.lanterna.TerminalPosition;
+import com.googlecode.lanterna.TextCharacter;
+import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.input.KeyStroke;
 import com.googlecode.lanterna.input.KeyType;
-
-
 
 /**
  * The driver for the TextEditor Application.
@@ -40,43 +41,54 @@ public class TextEditor {
                 gapBuffer.insert(gapBufferStr.charAt(i));
             }
         }
-    
 
-    boolean isRunning = true;{
+        boolean isRunning = true;
+        {
 
-    while(isRunning)
-    {
-        drawBuffer(gapBuffer, screen);
-        KeyStroke stroke = screen.readInput();
+            while (isRunning) {
+                drawBuffer(gapBuffer, screen);
+                KeyStroke stroke = screen.readInput();
 
-        if (stroke.getKeyType() == KeyType.Character) {
-            gapBuffer.insert(stroke.getCharacter());
-        }
+                if (stroke.getKeyType() == KeyType.Character) {
+                    gapBuffer.insert(stroke.getCharacter());
+                }
 
-        if (stroke.getKeyType() == KeyType.Backspace) {
-            gapBuffer.delete();
-        }
+                if (stroke.getKeyType() == KeyType.Backspace) {
+                    gapBuffer.delete();
+                }
 
-        if (stroke.getKeyType() == KeyType.ArrowLeft) {
-            gapBuffer.moveLeft();
-        }
+                if (stroke.getKeyType() == KeyType.ArrowLeft) {
+                    gapBuffer.moveLeft();
+                }
 
-        if (stroke.getKeyType() == KeyType.ArrowRight) {
-            gapBuffer.moveRight();
-        }
+                if (stroke.getKeyType() == KeyType.ArrowRight) {
+                    gapBuffer.moveRight();
+                }
 
-        if (stroke.getKeyType() == KeyType.Escape) {
-            screen.stopScreen();
-            isRunning = false;
+                if (stroke.getKeyType() == KeyType.Escape) {
+                    screen.stopScreen();
+                    isRunning = false;
+                }
+            }
+
+            Files.writeString(filePath, gapBuffer.toString());
         }
     }
 
-    Files.writeString(filePath,gapBuffer.toString());
-}
-}
+    private static void drawBuffer(GapBuffer gapBuffer, Screen screen) throws IOException {
+        screen.clear();
 
-    private static void drawBuffer(GapBuffer gapBuffer, Screen screen) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'drawBuffer'");
+        String content = gapBuffer.toString();
+
+        for (int i = 0; i < content.length(); i++) {
+            screen.setCharacter(
+                new TerminalPosition(i, 0),
+                new TextCharacter(content.charAt(i), TextColor.ANSI.DEFAULT, TextColor.ANSI.DEFAULT)
+            );
+        }
+
+        screen.setCursorPosition(new TerminalPosition(gapBuffer.getCursorPosition(), 0));
+
+        screen.refresh();
     }
 }
