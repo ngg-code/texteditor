@@ -25,12 +25,11 @@ public class GapBuffer {
         this.indexF = 10;
         this.size = 0;
     }
-    
+
     /** 
      * Inserts a character at the current cursor position.
      * If the buffer is full, it expands the buffer to accommodate the new character.
      * @param ch the character to insert
-     * @return void
     */
     public void insert(char ch) {
         if (this.indexI == this.indexF) {
@@ -43,7 +42,6 @@ public class GapBuffer {
     /**
      * Deletes the character before the cursor position.
      * If the cursor is at the start, it does nothing.
-     * @return void
      */
     public void delete() {
         if (this.indexI > 0) {
@@ -64,7 +62,6 @@ public class GapBuffer {
     /**
      * Moves the cursor one position to the left.
      * If the cursor is already at the start, it does nothing.
-     * @return void
      */
     public void moveLeft() {
         if (this.indexI == this.indexF) {
@@ -79,7 +76,6 @@ public class GapBuffer {
     /**
      * Moves the cursor one position to the right.
      * If the cursor is at the end of the buffer, it expands the buffer.
-     * @return void
      */
     public void moveRight() {
         if (this.indexF < this.str.length) {
@@ -142,7 +138,11 @@ public class GapBuffer {
 
         int afterTextStart = newSize - (this.str.length - this.indexF);
         System.arraycopy(this.str, 0, newBuffer, 0, this.indexI);
-        System.arraycopy(this.str, this.indexF, newBuffer, afterTextStart, this.str.length - this.indexF);
+        System.arraycopy(
+    this.str, this.indexF, newBuffer,
+    afterTextStart, this.str.length - this.indexF
+);
+
 
         this.indexF = afterTextStart;
         this.str = newBuffer;

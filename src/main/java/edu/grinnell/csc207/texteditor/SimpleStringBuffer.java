@@ -27,7 +27,6 @@ public class SimpleStringBuffer {
      * Inserts a character at the current cursor position.
      * If the buffer is full, it expands the buffer to accommodate the new character.
      * @param ch the character to insert
-     * @return void
      */
     public void insert(char ch) {
         if (size >= capacity) {
@@ -44,7 +43,6 @@ public class SimpleStringBuffer {
     /**
      * Deletes the character before the cursor position.
      * If the cursor is at the start, it does nothing.
-     * @return void
      */
     public void delete() {
         if (index > 0) {
@@ -66,7 +64,6 @@ public class SimpleStringBuffer {
     /**
      * Moves the cursor one position to the left.
      * If the cursor is at the start, it does nothing.
-     * @return void
      */
     public void moveLeft() {
         if (index > 0) {
@@ -77,7 +74,6 @@ public class SimpleStringBuffer {
     /**
      * Moves the cursor one position to the right.
      * If the cursor is at the end, it does nothing.
-     * @return void
      */
     public void moveRight() {
         if (index < size) {
