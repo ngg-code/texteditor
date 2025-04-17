@@ -75,6 +75,13 @@ public class TextEditor {
         }
     }
 
+    /**
+     * Draws the contents of the GapBuffer to the screen.
+     * 
+     * @param gapBuffer the GapBuffer containing the text to display.
+     * @param screen    the Screen object to draw on.
+     * @throws IOException if there is an error writing to the screen.
+     */
     private static void drawBuffer(GapBuffer gapBuffer, Screen screen) throws IOException {
         screen.clear();
 
