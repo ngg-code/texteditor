@@ -60,7 +60,7 @@ public class GapBufferTests {
         assertEquals(3, buffer.getCursorPosition());
 
         buffer.moveRight();
-        assertEquals(4, buffer.getCursorPosition());
+        assertEquals(3, buffer.getCursorPosition());
     }
 
     @Test

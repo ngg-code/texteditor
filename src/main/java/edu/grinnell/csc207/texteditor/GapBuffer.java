@@ -67,11 +67,7 @@ public class GapBuffer {
      * If the cursor is already at the start, it does nothing.
      */
     public void moveLeft() {
-        if (this.indexI == this.indexF) {
-            this.indexI--;
-            this.indexF--;
-        }
-        if (this.indexI > 0 && this.indexI != this.indexF) {
+        if (this.indexI > 0) {
             this.str[--this.indexF] = this.str[--this.indexI];
         }
     }
@@ -82,11 +78,11 @@ public class GapBuffer {
      */
     public void moveRight() {
         if (this.indexF < this.str.length) {
-            this.str[this.indexI++] = this.str[this.indexF++];
+            this.str[this.indexI] = this.str[this.indexF];
+            this.indexI++;
+            this.indexF++;
         } else {
             expandBuffer();
-            this.indexF++;
-            this.indexI++;
         }
     }
 
