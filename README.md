@@ -18,7 +18,83 @@
 
 ## Changelog
 @ngg-code ➜ /workspaces/texteditor (main) $ git log
-commit f077d0000530a4f69417571c04271cbb652bfd8b (HEAD -> main, origin/main, origin/HEAD)
+commit 93c659629f456c0c5b051d5f577d3a6746311ed4 (HEAD -> main, origin/main, origin/HEAD)
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Thu Apr 17 03:08:30 2025 +0000
+
+    fixed error
+
+commit 1c2a3f24b20688752e1ba32cd32b0ce62e650bf1
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Thu Apr 17 03:01:30 2025 +0000
+
+    format error fixed
+
+commit 4f29fdafe6236748f57103c9fa200f65a59a6617
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Thu Apr 17 02:57:45 2025 +0000
+
+    fixed documentation
+
+commit 8c00609eb75931ff12cec45a31c7eed23757421e
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Thu Apr 17 02:51:50 2025 +0000
+
+
+    documentation
+
+commit 60ddb5edc6435da2b38ca1117ccfd5ec4e762d15
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Thu Apr 17 02:34:26 2025 +0000
+
+    format change
+
+commit 6e47edd55a0384756b0cf84e81553d81e1e1a7f6
+commit 6e47edd55a0384756b0cf84e81553d81e1e1a7f6
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Thu Apr 17 02:24:47 2025 +0000
+
+    fixed errors
+
+commit 5cc030a751a640cc129cf30d6b44af4761d63cbf
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Wed Apr 16 21:40:59 2025 +0000
+
+    Implemented drawBuffer and fix errors
+
+commit 2525633e0044ff2e12838d1c344ca0414e58a655
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Wed Apr 16 19:45:23 2025 +0000
+
+    fixed errors
+
+commit b27c366182c45e4bf8302625a980b41912a07288
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Wed Apr 16 19:44:00 2025 +0000
+
+    fixed errors
+
+commit 3aa3e73993fc993f083d8c0bcd94efe2d892405c
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Wed Apr 16 19:43:18 2025 +0000
+
+    fixed errors
+
+commit 3463aac277dd3719520012f6ec21055b67888e8a
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:38:30 2025 +0000
+
+    Format
+
+commit a71faf1e52d6f7fd2f8a3309208168b89f604309
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:38:01 2025 +0000
+
+    Add Git log
+
+commit f077d0000530a4f69417571c04271cbb652bfd8b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:32:17 2025 +0000
 Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
 Date:   Mon Feb 24 05:32:17 2025 +0000
 
@@ -26,13 +102,379 @@ Date:   Mon Feb 24 05:32:17 2025 +0000
 
 commit d35a14426ab7efa13498f0030b6b989099c96a9d
 Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
-
-commit d35a14426ab7efa13498f0030b6b989099c96a9d
-Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
 Date:   Mon Feb 24 05:31:48 2025 +0000
 
     fix error
 
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
+commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+Date:   Mon Feb 24 05:31:28 2025 +0000
+
+    Add Author, running time analysis, Resources used.
+
+commit e9c5570d199d3be8f3f85d22980a92fe56912ca4
+Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
+set mark: ...skipping...
 commit 310838c857bd7162def7a89e6fcf9e7584b6b47b
 Author: ngg-code <157342451+ngg-code@users.noreply.github.com>
 Date:   Mon Feb 24 05:31:28 2025 +0000
@@ -311,7 +753,4 @@ Date:   Thu Feb 13 12:40:05 2025 -0600
 
 commit 02dc92144ecc088bcefb4a9798df0934efe300c1
 Author: Peter-Michael Osera <osera@cs.grinnell.edu>
-Date:   Thu Feb 13 12:39:53 2025 -0600
-
-    initial commit
-(END)
+:
