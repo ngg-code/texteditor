@@ -39,7 +39,19 @@ and **SimpleStringBuffer**.
 
 ## How to Run
 
-### Compile
-```bash
-javac *.java
+**`Prerequisites`**
+Java 17+ and Maven installed.
+
+**`Run tests`**
+Run the unit tests:
+mvn test
+
+**`Run the interactive editor`**
+Create or pick a file (example):
+printf "Hello\nThis is a demo.\n" > /tmp/demo.txt
+
+Run the editor (replace the path):
+mvn exec:java -Dexec.mainClass="edu.grinnell.csc207.texteditor.TextEditor" -Dexec.args="/tmp/demo.txt"
+
+
 
