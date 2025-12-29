@@ -4,7 +4,7 @@ package edu.grinnell.csc207.texteditor;
  * A gap buffer-based implementation of a text buffer.
  */
 public class GapBuffer {
-    
+
     /** The character array storing the buffer's content and gap */
     public char[] str;
     /** The index of the cursor in the buffer */
@@ -16,7 +16,6 @@ public class GapBuffer {
     /** The current size of the buffer, excluding the gap */
     public int size;
 
-    
     /**
      * Constructs a new GapBuffer with an initial capacity.
      */

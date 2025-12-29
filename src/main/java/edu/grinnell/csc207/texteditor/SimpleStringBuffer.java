@@ -26,7 +26,9 @@ public class SimpleStringBuffer {
 
     /**
      * Inserts a character at the current cursor position.
-     * If the buffer is full, it expands the buffer to accommodate the new character.
+     * If the buffer is full, it expands the buffer to accommodate the new
+     * character.
+     * 
      * @param ch the character to insert
      */
     public void insert(char ch) {
@@ -57,6 +59,7 @@ public class SimpleStringBuffer {
 
     /**
      * Returns the current cursor position in the buffer.
+     * 
      * @return the index of the cursor
      */
     public int getCursorPosition() {
@@ -85,6 +88,7 @@ public class SimpleStringBuffer {
 
     /**
      * Returns the current size of the buffer.
+     * 
      * @return the number of characters in the buffer
      */
     public int getSize() {
@@ -93,6 +97,7 @@ public class SimpleStringBuffer {
 
     /**
      * Returns the character at the specified index in the buffer.
+     * 
      * @param i the index of the character to retrieve
      * @return the character at the specified index
      */
@@ -111,7 +116,8 @@ public class SimpleStringBuffer {
 
     /**
      * Expands the buffer's capacity by doubling it.
-     * This method is called when the buffer is full and needs to accommodate more characters.
+     * This method is called when the buffer is full and needs to accommodate more
+     * characters.
      */
     private void expandBuffer() {
         int newCapacity = capacity * 2;

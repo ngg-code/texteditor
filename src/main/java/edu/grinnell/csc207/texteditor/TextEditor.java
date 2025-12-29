@@ -90,8 +90,8 @@ public class TextEditor {
         for (int i = 0; i < content.length(); i++) {
             screen.setCharacter(
                     new TerminalPosition(i, 0),
-                    new TextCharacter(content.charAt(i), 
-                    TextColor.ANSI.DEFAULT, TextColor.ANSI.DEFAULT));
+                    new TextCharacter(content.charAt(i),
+                            TextColor.ANSI.DEFAULT, TextColor.ANSI.DEFAULT));
         }
 
         screen.setCursorPosition(new TerminalPosition(gapBuffer.getCursorPosition(), 0));
