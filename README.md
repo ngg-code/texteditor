@@ -1,13 +1,45 @@
 # CSC 207: Text Editor
 
-**Author**: _(TODO: fill me in)_
+This is a text editor using two different buffer data structures: **GapBuffer** 
+and **SimpleStringBuffer**.
+
+**Author**: Nahom Gebreegziabher
 
 ## Resources Used
+- Course website:https://osera.cs.grinnell.edu/ttap/data-structures-labs/text-editor.html?search=
+ * - Netbean as IDE and VS code(to commit)
+ * - java 17.0.14
+ * - lanterna library: https://github.com/mabe02/lanterna
+ * - https://docs.oracle.com/javase/8/docs/api/overview-summary.html
+ */
 
-+ _(TODO: fill me in)_
-+ ...
-+ ...
+ ### Core Implementation
+- **`GapBuffer.java`**  
+  Implements a gap buffer data structure optimized for efficient insertions and deletions near the cursor.
 
-## Changelog
+- **`SimpleStringBuffer.java`**  
+  Implements a basic string-based buffer used as a baseline for comparison.
 
-_(TODO: fill me in with a log of your committed changes)_
+- **`TextEditor.java`**  
+  Provides the text editor interface and integrates buffer implementations to support common editing operations.
+
+  ### Testing
+- **`GapBufferTests.java`**  
+  Unit tests validating correctness, edge cases, and expected behavior of the `GapBuffer`.
+
+- **`SimpleStringBufferTests.java`**  
+  Unit tests ensuring correctness of the `SimpleStringBuffer` implementation.
+
+  ## Features
+
+- Cursor-based text insertion and deletion
+- Multiple buffer implementations interchangeable within the editor
+- Unit tests for all core data structures
+- Clear separation between editor logic and buffer storage
+
+## How to Run
+
+### Compile
+```bash
+javac *.java
+
